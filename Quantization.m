@@ -8,7 +8,7 @@ N = 8;
 
 %       play audio of original or reconstructed audio signal
 % sound(Original, Fs)
-sound(reconstructed_uniform, Fs)
+% sound(reconstructed_uniform, Fs)
 
 %       plot original and reconstructed audio signals
 figure
@@ -32,7 +32,7 @@ Mu = 100;
 
 %       play audio of original or reconstructed audio signal
 % sound(Original, Fs)
-sound(reconstructed_mulaw, Fs)
+% sound(reconstructed_mulaw, Fs)
 
 %       plot original and reconstructed audio signals
 figure
@@ -52,7 +52,7 @@ figure
 hold on
 plot(Original)
 plot(reconstructed_uniform)
-plot(reconstructed_mulaw/(3*max(reconstructed_mulaw)))
+plot(reconstructed_mulaw)
 hold off
 title('Comparison of Original Uniform, and Mulaw Quantized Signals', 'Fontweight', 'Normal')
 axis([2*10^4 (2.2*10^4) 0 0.35])
